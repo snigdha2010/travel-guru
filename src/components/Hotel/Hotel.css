@@ -1,3 +1,5 @@
 .rooms{
     display: flex;
+    border: 1px double goldenrod;
+    margin: 10px;
 }

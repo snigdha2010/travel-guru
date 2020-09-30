@@ -12,15 +12,15 @@ const Header = () => {
    }
    console.log(logedIn)
     return (
-        <div  className = 'header '>
-  <Navbar   variant="black">
+        <div  className = 'header'>
+  <Navbar >
     <Navbar.Brand href="/"><img className='w-50'  src={logo} alt=""/></Navbar.Brand>
     <Nav className="ml-auto">
       <FormControl type="text" placeholder="Search your Destination" className="mr-sm-2" />
      
-      <Nav.Link href="#home">News</Nav.Link>
-      <Nav.Link href="#features">Destination</Nav.Link>
-      <Nav.Link href="#pricing">Blog</Nav.Link>
+      <Nav.Link href="">News</Nav.Link>
+      <Nav.Link href="">Destination</Nav.Link>
+      <Nav.Link href="">Blog</Nav.Link>
     </Nav>
     <Form inline>
       

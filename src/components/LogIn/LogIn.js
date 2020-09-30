@@ -6,7 +6,7 @@ import Header from '../Header/Header';
 import * as firebase from "firebase/app";
 import "firebase/auth";
 import firebaseConfig from './firebase.config';
-
+import logo1 from '../../resources/Icon/google.png';
 
 
 firebase.initializeApp(firebaseConfig);
@@ -114,10 +114,10 @@ const LogIn = () => {
         history.replace(from)
     }
     return (
-        <>
+        <React.Fragment>
         <Header/>
-        <div className='text-center m-4'>
-            {signUpUser? <h2>Create an Account</h2>: <h2>LogIn</h2>}
+        <div className='text-center m-4 text-dark'>
+            {signUpUser? <h2 className='' >Create an Account</h2>:<h2>LogIn</h2>}
            <form className= 'login-form mt-4' onSubmit ={handleSubmit}>
              { signUpUser && <input onBlur={handleInput} type='text' name='first-name' className='no-outline' placeholder="First Name"/>
             }  <br/>
@@ -136,7 +136,7 @@ const LogIn = () => {
             <button onClick={handleGoogleSignIn}>Continu with Google</button>
             <br/><br/><button onClick={ handleFaceBookSignIn}>Continu with Facebook</button>
         </div>
-        </>
+        </React.Fragment>
     );
 };
 

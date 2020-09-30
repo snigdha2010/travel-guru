@@ -52,9 +52,9 @@ const SearchHotel = () => {
     }
     ]
     return (
-        <>
+        <React.Fragment>
         <Header/>
-        <div className = 'section-devider'> 
+        <div className = 'section-devider text-dark'> 
             <div className = 'left-section'>
                 <h1 className='mb-4'>Stay in Cox's Bazar</h1>
                 {
@@ -62,10 +62,10 @@ const SearchHotel = () => {
                  }
             </div>
             <div>
-                 <h1>Map Goes</h1>
+                 <h1>Map Goes Here</h1>
             </div>
         </div>
-        </>
+       </React.Fragment>
     );
 };
 
