@@ -14,6 +14,7 @@ import NotFound from './components/NotFound/NotFound';
 import LogIn from './components/LogIn/LogIn';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import SearchHotel from './components/SearchHotel/SearchHotel';
+import MapField from './components/MapField/MapField';
 
 
 export const UserContext = createContext();

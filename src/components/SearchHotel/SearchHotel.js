@@ -5,6 +5,7 @@ import img1 from '../../resources/Image/Rectangle 26.png';
 import img2 from '../../resources/Image/Rectangle 27.png';
 import img3 from '../../resources/Image/Rectangle 28.png';
 import Header from '../Header/Header';
+import MapField from '../MapField/MapField';
 
 const SearchHotel = () => {
     const hotels =[
@@ -63,6 +64,8 @@ const SearchHotel = () => {
             </div>
             <div>
                  <h1>Map Goes Here</h1>
+                 <br/><br/>
+                <MapField/>
             </div>
         </div>
        </React.Fragment>
