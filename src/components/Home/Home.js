@@ -8,16 +8,15 @@ import TravelPlace from '../TravelPlace/TravelPlace';
 const Home = () => {
     const [ place , setPlace ] = useState('coxbazar');
     const data = [
-       {id: "01", name: 'Coxbazar', place: "coxbazar", description: "world best beach"},
-       {id: "02", name: 'Sundorbon', place: "sundorbon", description: "world best nature"},
-       {id: "03", name: 'Srimongol',place: "srimongol", description: "world best water"}
+       {id: "01", name: 'Coxbazar', place: "coxbazar", description: "world best beach Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium commodi ipsam tempora perspiciatis ad natus est eos provident aliquam quas, excepturi dolorem fuga totam officiis labore! Nobis rem eius recusandae. "},
+       {id: "02", name: 'Sundorbon', place: "sundorbon", description: "world best nature Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium commodi ipsam tempora perspiciatis ad natus est eos provident aliquam quas, excepturi dolorem fuga totam officiis labore! Nobis rem eius recusandae."},
+       {id: "03", name: 'Srimongol',place: "srimongol", description: "world best water Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium commodi ipsam tempora perspiciatis ad natus est eos provident aliquam quas, excepturi dolorem fuga totam officiis labore! Nobis rem eius recusandae."}
     
     ]
     const currentPlace = data.find(dt=>dt.place == place);
-     console.log(currentPlace)
     return (
-        <div className = 'travel-places' >
-            <div className = 'place-details'>
+        <div className = 'section-devider text-white' >
+            <div className = 'left-section'>
              <TravelPlace place = {currentPlace}></TravelPlace>
             </div>
             <div className = 'travel-options'>
@@ -28,5 +27,6 @@ const Home = () => {
         </div>
     );
 };
+
 
 export default Home;

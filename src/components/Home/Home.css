@@ -5,12 +5,15 @@
     border-radius: 10px; 
     margin: 10px;
 }
-.travel-places{
+.section-devider{
     display: flex;
     padding: 20px;
     height: 800px;
 }
-.place-details{
+.left-section{
     padding: 80px;
     width: 50%;
+}
+body{
+    color: aliceblue;
 }
